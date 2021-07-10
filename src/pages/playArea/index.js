@@ -2,6 +2,7 @@ import { useState } from "react";
 import cn from "classnames";
 import data from "../../questions";
 import { useParams, Link } from "react-router-dom";
+import Toast from "../../components/toast";
 import "./style.scss";
 
 const PlayArea = (props) => {
@@ -11,6 +12,9 @@ const PlayArea = (props) => {
   const [showAll, setShowAll] = useState(false);
   const [value, setValue] = useState("");
   const [revealIndex, setRevealIndex] = useState([]);
+
+  const [errors, setErrors] = useState(0);
+  const [showCross, setVisible] = useState(false);
 
   const handleInputChange = (e) => {
     setValue(e.target.value);
@@ -27,7 +31,13 @@ const PlayArea = (props) => {
           val.toLowerCase().includes(value.toLowerCase()) ||
           value.toLowerCase().includes(val.toLowerCase())
       );
-    if (index >= 0) setRevealIndex((revealIndex) => [...revealIndex, index]);
+    if (index >= 0) {
+      setRevealIndex((revealIndex) => [...revealIndex, index]);
+    } else {
+      console.log("here");
+      setErrors((err) => err + 1);
+      setVisible(true);
+    }
     setValue("");
   };
 
@@ -70,6 +80,18 @@ const PlayArea = (props) => {
           })}
         </div>
       </div>
+      {showCross && (
+        <Toast
+          setVisible={setVisible}
+          content={
+            <div className="error-cont">
+              {[...Array(errors)].map((_, i) => (
+                <div className="close big" key={i} />
+              ))}
+            </div>
+          }
+        />
+      )}
     </div>
   );
 };

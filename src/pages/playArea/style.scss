@@ -17,6 +17,7 @@
 
 
 .playarea-cont {
+  position: relative;
   // display: flex;
   // justify-content: center;
   
@@ -77,6 +78,7 @@
     font-size:16px;
     outline: none;
     flex-grow: 1;
+    font-weight: bold
   }
   .voice{
     height:20px;
@@ -144,8 +146,104 @@
     height: 270px;
   }
 
-  .question {
-    font-weight: bold;
+  // .question {
+  //   font-weight: bold;
+  // }
+
+  .toast {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .error-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.close{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: red;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &.big {
+    width: 200px;
+    transform: scale(3);
+  }
+  &.hairline {
+    &::before, &::after {
+      height: 1px;
+    }
+  }
+  &.thick {
+    &::before, &::after {
+      height: 4px;
+      margin-top: -2px;
+    }
+  }
+  &.black {
+    &::before, &::after {
+      height: 8px;
+      margin-top: -4px;
+    }
+  }
+  &.heavy {
+    &::before, &::after {
+      height: 12px;
+      margin-top: -6px;
+    }
+  }
+  &.pointy {
+    &::Before, &::after {
+      width: 200%;
+      left: -50%;
+    }
+  }
+  &.rounded {
+    &::before, &::after {
+      border-radius: 5px;
+    }
+  }
+  &.blades {
+    &::before, &::after {
+      border-radius: 5px 0;
+    }
+  }
+  &.warp {
+    &::before, &::after {
+      border-radius: 120% 0;
+    }
+  }
+  &.fat {
+    &::before, &::after {
+      border-radius: 100%;
+    }
+  }
 }
