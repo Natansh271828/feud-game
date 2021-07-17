@@ -1,8 +1,24 @@
 .home {
+  height: 100vh;
+  background: black;
   .questions-cont {
-    margin-top: 50px;
+    padding-top: 50px;
   }
   .question-link {
     padding: 10px;
+  }
+  .header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px 0;
+    color: white;
+    font-family: "Pacifico";
+    font-size: 24px;
+    * {
+      cursor: pointer;
+    }
+    
   }
 }

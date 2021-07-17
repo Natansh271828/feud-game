@@ -45,6 +45,7 @@ const PlayArea = (props) => {
     <div className="playarea-cont">
       <div className="header">
         <Link to={{ pathname: `/` }}>Home</Link>
+        <div className="heading">The Great Brain Drain</div>
         <div onClick={() => setShowAll(true)}> Show All </div>
       </div>
       <div className="search-bar-cont">
@@ -60,7 +61,7 @@ const PlayArea = (props) => {
         </div>
         <div className="buttons">
           <button className="button" type="button" onClick={searchValue}>
-            Google Search
+            Search
           </button>
         </div>
 
@@ -86,7 +87,7 @@ const PlayArea = (props) => {
           content={
             <div className="error-cont">
               {[...Array(errors)].map((_, i) => (
-                <div className="close big" key={i} />
+                <div className="close big thick" key={i} />
               ))}
             </div>
           }
