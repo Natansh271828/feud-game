@@ -48,9 +48,9 @@ const PlayArea = (props) => {
         <div className="heading">The Great Brain Drain</div>
         <div onClick={() => setShowAll(true)}> Show All </div>
       </div>
+      <div className="question">{ques}</div>
       <div className="search-bar-cont">
         <div className="bar">
-          <div className="question">{ques}</div>
           <input
             className="searchbar"
             type="text"
@@ -70,7 +70,7 @@ const PlayArea = (props) => {
             return (
               <div className="ans-item" key={value}>
                 <div>{value}</div>
-                <div>{weightage}</div>
+                {/* <div>{weightage}</div> */}
                 <div
                   className={cn("mask", {
                     "fade-out": showAll || revealIndex.includes(index)

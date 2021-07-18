@@ -45,7 +45,7 @@
   }
 
   .search-bar-cont {
-    margin-top: 60px;
+    margin-top: 10px;
   }
 
   .grid{
@@ -156,12 +156,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: space-between;
-    height: 270px;
+    height: 160px;
   }
 
-  // .question {
-  //   font-weight: bold;
-  // }
+  .question {
+    margin-top: 60px;
+    color: white;
+    font-weight: bold;
+  }
 
   .toast {
     position: absolute;

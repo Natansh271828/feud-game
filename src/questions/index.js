@@ -2,184 +2,242 @@ const data = {
   questions: [
     {
       id: 0,
-      ques: "compelete this query 1",
+      ques: "Tell Me Something A Grandma Passes On To Her Grandchildren",
       answers: [
         {
-          value: "a",
+          value: "Jewelry",
           weightage: 100
         },
         {
-          value: "b",
+          value: "Money",
           weightage: 100
         },
         {
-          value: "c",
+          value: "Recipes",
           weightage: 100
         },
         {
-          value: "d",
+          value: "Pictures",
           weightage: 100
         },
         {
-          value: "e",
+          value: "Stories",
           weightage: 100
         },
         {
-          value: "f",
-          weightage: 100
-        },
-        {
-          value: "g",
-          weightage: 100
-        },
-        {
-          value: "h",
-          weightage: 100
-        },
-        {
-          value: "i",
-          weightage: 100
-        },
-        {
-          value: "j",
+          value: "Advice",
           weightage: 100
         }
       ]
     },
     {
       id: 1,
-      ques: "compelete this query 2",
+      ques: "Name Something You Put In Your Mouth But Dont Swallow",
       answers: [
         {
-          value: "a",
+          value: "Chewing Gum",
           weightage: 100
         },
         {
-          value: "b",
+          value: "Mouthwash",
           weightage: 100
         },
         {
-          value: "c",
+          value: "Toothpaste / Toothbrush",
           weightage: 100
         },
         {
-          value: "d",
+          value: "Pen",
           weightage: 100
         },
         {
-          value: "e",
+          value: "Cutlery",
           weightage: 100
         },
         {
-          value: "f",
-          weightage: 100
-        },
-        {
-          value: "g",
-          weightage: 100
-        },
-        {
-          value: "h",
-          weightage: 100
-        },
-        {
-          value: "i",
-          weightage: 100
-        },
-        {
-          value: "j",
+          value: "False Teeth",
           weightage: 100
         }
       ]
     },
     {
       id: 2,
-      ques: "compelete this query 3",
+      ques: "Name A Place That Gets Crowded At The End Of A Work Day",
       answers: [
         {
-          value: "a",
+          value: "Bar",
           weightage: 100
         },
         {
-          value: "b",
+          value: "Highway",
           weightage: 100
         },
         {
-          value: "c",
+          value: "Bank",
           weightage: 100
         },
         {
-          value: "d",
+          value: "Public Transit",
           weightage: 100
         },
         {
-          value: "e",
+          value: "Shopping Center",
           weightage: 100
         },
         {
-          value: "f",
-          weightage: 100
-        },
-        {
-          value: "g",
-          weightage: 100
-        },
-        {
-          value: "h",
-          weightage: 100
-        },
-        {
-          value: "i",
-          weightage: 100
-        },
-        {
-          value: "j",
+          value: "Restaurant",
           weightage: 100
         }
       ]
     },
     {
       id: 3,
-      ques: "compelete this query 4",
+      ques:
+        "Name A Hygiene Product That You Hope Your Office Mate Uses Every Day.",
       answers: [
         {
-          value: "a",
+          value: "Soap",
           weightage: 100
         },
         {
-          value: "b",
+          value: "Deoderant",
           weightage: 100
         },
         {
-          value: "c",
+          value: "Toothpaste",
           weightage: 100
         },
         {
-          value: "d",
+          value: "Shampoo",
           weightage: 100
         },
         {
-          value: "e",
+          value: "Mouthwash",
           weightage: 100
         },
         {
-          value: "f",
+          value: "Hand Sanitizer",
+          weightage: 100
+        }
+      ]
+    },
+    {
+      id: 4,
+      ques:
+        "Name An Ingredient That You Use In Baking, But Would Not Eat On Its Own.",
+      answers: [
+        {
+          value: "Flour",
           weightage: 100
         },
         {
-          value: "g",
+          value: "Salt",
           weightage: 100
         },
         {
-          value: "h",
+          value: "Butter",
           weightage: 100
         },
         {
-          value: "i",
+          value: "Sugar",
           weightage: 100
         },
         {
-          value: "j",
+          value: "Baking Soda",
+          weightage: 100
+        },
+        {
+          value: "Vanilla",
+          weightage: 100
+        }
+      ]
+    },
+    {
+      id: 5,
+      ques: "Name Something A Surgeon Keeps Nearby When He Operates",
+      answers: [
+        {
+          value: "Scalpel",
+          weightage: 100
+        },
+        {
+          value: "Nurse",
+          weightage: 100
+        },
+        {
+          value: "Gloves",
+          weightage: 100
+        },
+        {
+          value: "Mask",
+          weightage: 100
+        },
+        {
+          value: "IV",
+          weightage: 100
+        },
+        {
+          value: "Alcohol",
+          weightage: 100
+        }
+      ]
+    },
+    {
+      id: 6,
+      ques: "If You Forgot Your Date’s Name, What Might You Call Them Instead?",
+      answers: [
+        {
+          value: "Honey",
+          weightage: 100
+        },
+        {
+          value: "Baby",
+          weightage: 100
+        },
+        {
+          value: "You",
+          weightage: 100
+        },
+        {
+          value: "Sweetie",
+          weightage: 100
+        },
+        {
+          value: "Dear",
+          weightage: 100
+        },
+        {
+          value: "Miss/ Sir",
+          weightage: 100
+        }
+      ]
+    },
+    {
+      id: 7,
+      ques: "Name Something A Woman Might Wish Her Husband Had More Of.",
+      answers: [
+        {
+          value: "Money",
+          weightage: 100
+        },
+        {
+          value: "Hair",
+          weightage: 100
+        },
+        {
+          value: "Time",
+          weightage: 100
+        },
+        {
+          value: "Muscles",
+          weightage: 100
+        },
+        {
+          value: "Love",
+          weightage: 100
+        },
+        {
+          value: "Energy",
           weightage: 100
         }
       ]
